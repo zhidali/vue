@@ -1516,7 +1516,7 @@ function parse (
       }
     },
     comment: function comment (text, start, end) {
-      // adding anyting as a sibling to the root node is forbidden
+      // adding anything as a sibling to the root node is forbidden
       // comments should still be allowed, but ignored
       if (currentParent) {
         var child = {
@@ -3489,7 +3489,7 @@ function genFor (
     state.warn(
       "<" + (el.tag) + " v-for=\"" + alias + " in " + exp + "\">: component lists rendered with " +
       "v-for should have explicit keys. " +
-      "See https://vuejs.org/guide/list.html#key for more info.",
+      "See https://v2.vuejs.org/v2/guide/list.html#Maintaining-State for more info.",
       el.rawAttrsMap['v-for'],
       true /* tip */
     );
